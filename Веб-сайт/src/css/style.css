@@ -1,0 +1,682 @@
+/* *{
+  font-family: sans-serif;
+} */
+/* навігаційне меню */
+header nav {
+  padding: 6px 0 2px 0;
+  position: fixed;
+  width: 100%;
+  background: #f0f0f0;
+  height: 70px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+header .row .menu_name {
+  font-size: 34px;
+  font-weight: 900;
+  color: #076bb2;
+  text-decoration: none;
+}
+header .row .menu {
+  margin-right: 90px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu_item {
+  margin-top: 15px;
+}
+.menu .menu_info {
+  font-weight: 500;
+  font-size: 19px;
+  color: #231f20;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: all 300ms;
+}
+.menu .menu_item a:hover {
+  color: #0568af;
+}
+.menu li a:before:hover {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #100142;
+  left: 0;
+  bottom: -2px;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+.row .language {
+  cursor: pointer;
+  opacity: 0.7;
+  border: none;
+  margin-top: 15px;
+  background-color: #f0f0f0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #231f20;
+}
+/* частина сайте з бронюванням */
+.order {
+  padding: 744px 0 138px 0;
+  height: 981px;
+  background: url(../img/hotel.jpg) center center/cover no-repeat;
+}
+.order .arrive {
+  width: 812.08px;
+  height: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order .arrive .hotel {
+  width: 235.66px;
+  height: 99px;
+  background-color: #7b7b7b;
+}
+.order .hotel .hotel_descr {
+  position: absolute;
+  margin: 23px 66px 24px 11px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+.order .hotel .the_hotel {
+  position: absolute;
+  padding: 43px 42px 24px 122px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+.order .hotel #hotel_check_mark {
+  margin: 49px 8px 20px 190px;
+  background-color: #7b7b7b;
+  border: none;
+}
+
+.order .arrive .time {
+  width: 235.66px;
+  height: 99px;
+  background-color: #504f4f;
+}
+.order .time .time_descr {
+  padding: 22px 143px 51px 11.5px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+.order .time .the_time {
+  padding: 44px 137px 26px 11.5px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+}
+.order .time .time_check_mark {
+  margin: 49px 8px 20px 190px;
+  background-color: #504f4f;
+  border: none;
+}
+.order .arrive .exit {
+  width: 235.66px;
+  height: 99px;
+  background-color: #303030;
+}
+.order .arrive .exit .exit_descr {
+  padding: 20px 165px 53px 15.5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+}
+.order .arrive .exit .the_exit {
+  padding: 43px 140px 27px 15.5px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+}
+.order .arrive .book {
+  width: 107.03;
+  height: 99px;
+  background-color: #076bb2;
+}
+.order .book .book_descr {
+  padding: 32px 13px 35px 13px;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* секція про нас  */
+.about_us {
+  min-height: 516px;
+  padding: 48px 0 48px 0;
+  background-color: #f0f0f0;
+}
+.about_us .title, .title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  color: #076bb2;
+}
+.about_us .about_descr {
+  padding-left: 436px;
+  padding-right: 436px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  text-align: center;
+  color: #222;
+}
+
+/* секція про кімнати */
+
+.our_rooms {
+  min-height: 852px;
+  padding: 48px 0 94px 0;
+  background-color: #f0f0f0;
+  z-index: 2;
+}
+.our_rooms .hotel_rooms {
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.our_rooms .hotel_rooms .room_picture {
+  border-radius: 10px;
+  box-shadow: -1px -1px 26px 12px rgba(168, 168, 168, 0.5);
+  margin: 48px 0px 48px 95px;
+}
+.our_rooms .hotel_rooms .hotel_content {
+  position: relative;
+  margin: 48px 91px 328px 28px;
+}
+.our_rooms .hotel_rooms .hotel_content .section-description {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #222;
+}
+.our_rooms .hotel_rooms .hotel_content .rooms-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222;
+}
+.our_rooms .hotel_rooms .hotel_content .rooms-quotes {
+  padding: 17px 0px 32px 200px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 146%;
+  color: #222;
+}
+.color_button {
+  width: 422px;
+  height: 51px;
+  background: #076bb2;
+  border: none;
+  border-radius: 6px;
+}
+.color_button .room_button {
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+.color_button:hover {
+  border-radius: 6px;
+  background: #819eb2;
+  border: 1px solid #00d1ff;
+  transition: all 300ms;
+}
+
+/* частина сайту про івенти */
+.our_ivents {
+  min-height: 820px;
+  background-color: #f0f0f0;
+  padding: 0 90px 1px 90px;
+}
+.ivents .riverside_valencia:hover {
+  transform: translateY(-10px);
+  transition: all ease 0, 8s;
+}
+.our_ivents .title_ivent {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #888;
+}
+.our_ivents .ivents {
+  padding-top: 29px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.our_ivents .ivents .riverside_valencia .picture_ivent {
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  width: 428px;
+  height: 359px;
+  box-shadow: 4px 4px 8px 4px rgba(54, 54, 54, 0.2);
+}
+.our_ivents .ivents .riverside_valencia .block {
+  border-radius: 7px 0 8px 0;
+  position: absolute;
+  margin-top: -359px;
+  width: 137px;
+  height: 137px;
+  background-color: #f0f0f0;
+}
+.our_ivents .ivents .riverside_valencia .block .date_ivent {
+  margin-top: 36px;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+.our_ivents .ivents .riverside_valencia .block .month_ivent {
+  margin-top: -30px;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+.ivents .ivent_descr {
+  margin-top: 47px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 153%;
+  text-align: center;
+  color: #222;
+}
+.ivents .ivent_descr_2 {
+  margin-top: -15px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+}
+
+.book_button {
+  display: block;
+  margin: 65px auto;
+  width: 229px;
+  height: 49px;
+  background: #076bb2;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.book_button:hover {
+  background: #819eb2;
+  border: 1px solid #00d1ff;
+  transition: all 300ms;
+}
+/* інформація про кухню */
+
+.kitchen {
+  min-height: 896px;
+  background-color: #f0f0f0;
+  padding: 0 34px 98px 0;
+}
+.kitchen .our_kitchen {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #888;
+}
+.kitchen .kitchen_info {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+}
+.kitchen .kitchen_info .video_kitchen {
+  width: 813px;
+  height: 778px;
+  margin: 25px 63px 0 -83px;
+  box-shadow: -1px -1px 26px 12px rgba(168, 168, 168, 0.5);
+  border-radius: 10px;
+}
+
+.kitchen .kitchen_info .kitchen_content {
+  margin: 214px 34px 288px 27px;
+}
+.kitchen .kitchen_info .kitchen_content .sub_title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #222;
+}
+.kitchen .kitchen_info .kitchen_content .kitchen_descr {
+  margin-top: 65px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+}
+
+.kitchen .kitchen_info .kitchen_content .kitchen_more {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #446fb0;
+}
+
+/* контакти */
+.contacts {
+  min-height: 683px;
+  padding: 0 216px 65px 216px;
+  background-color: #f0f0f0;
+}
+.contacts .title_contact {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 145%;
+  color: #888;
+  text-align: center;
+}
+.contacts .menu_contacts {
+  width: 100%;
+  padding: 25px 75px 49px 65px;
+  background: #d6d6d6;
+  width: 1080px;
+  height: 565px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 10px rgba(110, 110, 110, 0.1);
+}
+.contacts .menu_contacts form .user_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contacts .user_details .input-box {
+  flex-basis: 45%;
+}
+.contacts form .user_details .input-box {
+  margin: 62px 10px 0 0;
+}
+form .user_details .input-box input {
+  width: 440px;
+  height: 31px;
+  background: #d6d6d6;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+
+.message {
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.message_1 {
+  margin-top: 65px;
+  width: 430px;
+  height: 159px;
+
+  background: #d6d6d6;
+  border-color: #000;
+}
+
+.message .send {
+  margin: 175px 0 0 75px;
+  width: 440px;
+  height: 49px;
+  background: #076bb2;
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.message .send:hover {
+  background: #819eb2;
+  border: 1px solid #00d1ff;
+  transition: all 300ms;
+}
+/* коментарі */
+.comments {
+  background-color: #f0f0f0;
+  min-height: 460px;
+  padding: 68px 120px 82px 120px;
+}
+.comments .title_comment {
+  font-weight: 700;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+.comments .all_comments {
+  padding-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comments .three_comments {
+  padding: 24px 24px 48px 24px;
+  box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.2);
+  background: #f8f8f8;
+  border-radius: 10px;
+  width: 384px;
+  height: 190px;
+  cursor: pointer;
+}
+.three_comments:hover {
+  transform: translateY(-10px);
+  transition: all ease 0, 3s;
+}
+.comments .block_comment {
+  object-fit: cover;
+  object-position: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #c4c4c4;
+}
+.comments .all_comments .three_comments .profile {
+  display: flex;
+  align-items: center;
+}
+.comments .all_comments .three_comments .comment_descr {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #999;
+}
+.comments .all_comments .three_comments .profile .name_users {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.comments .all_comments .three_comments .profile .name_users .name_comment {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: px;
+}
+.comments .all_comments .three_comments .profile .name_users .place_comment {
+  font-weight: 400;
+  font-size: 12px;
+  color: #999;
+}
+.comments .all_comments .three_comments .profile .comment_rating {
+  padding: 0 0 0 98px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ea9459;
+
+}
+.comments .all_comments .three_comments .profile .comment_rating i {
+  color: #ea9459;
+  padding-right: 8px;
+}
+.comments .all_comments .three_comments .comment_descr {
+  padding-top: 17px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #999;
+}
+.look_comment {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  color: #f4694c;
+  text-decoration: none;
+}
+.look {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-top: 44px;
+}
+.comments .look a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #514202;
+  transition-duration: 0.5s;
+  transform: scale(0);
+}
+.comments .look a:hover::before {
+  transform: scale(1);
+}
+
+/* footer */
+footer {
+  padding: 61px 172px 59px 161px;
+  background: #033c65;
+  min-height: 643px;
+}
+footer .logo {
+  text-align: center;
+  font-weight: 900;
+  font-size: 64px;
+  color: #fff;
+}
+footer .footer_info {
+  margin-top: 65px;
+  width: 100%;
+  min-height: 231px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_info .about {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+footer .footer_info ul {
+  padding-left: 0px;
+  list-style: none;
+}
+footer .footer_info ul {
+  cursor: pointer;
+  margin-top: 29px;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+}
+
+footer .footer_icons {
+  width: 175px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_icons i {
+  font-size: 30px;
+  color: #fff;
+}
+footer .footer_hr {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 0px;
+}
+footer .foter_descr ul {
+  list-style: none;
+  padding-left: 0px;
+}
+footer .foter_descr ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+}
+footer .foter_descr ul li {
+  display: inline-block;
+  padding: 0 12px 0 0;
+}
+footer .foter_descr li:after {
+  opacity: 0.8;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #eeeeee;
+  display: inline-block;
+  margin: 0px 0px 9px 6px;
+}
+footer .footeer_date {
+  font-weight: 400;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.box_info a {
+  position: relative;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+}
+.box_info a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #100142;
+  left: 0;
+  bottom: -2px;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+.box_info a:hover:before {
+  transform: scale(1);
+}
